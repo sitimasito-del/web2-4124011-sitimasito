@@ -44,6 +44,5 @@ Route::get('/profil', [ProfilController::class, 'index'])->name('profil.index');
 
 Route::get('/profil/{nim}', [ProfilController::class, 'show'])->name('profil.show');
 
-Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog.index');
-
-Route::get('/katalog/{id}', [KatalogController::class, 'show'])->name('katalog.show');
+Route::get('/katalog', [KatalogController::class, 'index']);
+Route::get('/katalog/{id}', [KatalogController::class, 'show']);
