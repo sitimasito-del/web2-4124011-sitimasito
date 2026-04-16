@@ -7,11 +7,16 @@ use Illuminate\Http\Request;
 class KatalogController extends Controller
 {
     private $produk = [
-        ["nama" => "Laptop", "harga" => 8000000],
-        ["nama" => "Mouse", "harga" => 150000],
-        ["nama" => "Keyboard", "harga" => 300000],
-        ["nama" => "Monitor", "harga" => 2000000],
-        ["nama" => "Flashdisk", "harga" => 100000],
+        ["nama" => "Laptop ASUS", "harga" => 8500000],
+    ["nama" => "Mouse Wireless Logitech", "harga" => 200000],
+    ["nama" => "Keyboard Mechanical", "harga" => 450000],
+    ["nama" => "Monitor Samsung 24 inch", "harga" => 2500000],
+    ["nama" => "Flashdisk Sandisk 32GB", "harga" => 120000],
+    ["nama" => "Headset Gaming", "harga" => 350000],
+    ["nama" => "Webcam HD", "harga" => 400000],
+    ["nama" => "Speaker Bluetooth", "harga" => 300000],
+    ["nama" => "Power Bank 10000mAh", "harga" => 180000],
+    ["nama" => "Printer Epson", "harga" => 2200000],
     ];
 
     public function index()
