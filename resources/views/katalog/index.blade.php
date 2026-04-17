@@ -3,7 +3,7 @@
 @section('content')
 
 <h1 style="font-size:28px; font-weight:bold; margin-bottom:20px; color:#0a3d62;">
-    🌊 Katalog Produk
+    Produk
 </h1>
 
 <div style="display:flex; flex-wrap:wrap; gap:20px;">
