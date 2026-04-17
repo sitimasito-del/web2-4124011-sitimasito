@@ -1,64 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>MyShop</title>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body style="margin:0; font-family:Arial, sans-serif; background:#f5f6fa;">
+<body class="bg-gray-100">
 
 <!-- NAVBAR -->
-<nav style="
-    background: linear-gradient(90deg, #0984e3, #74b9ff);
-    padding: 12px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-">
+<nav class="bg-blue-500 text-white px-6 py-3 flex justify-between items-center flex-wrap shadow">
 
-    <div style="font-size:20px; font-weight:bold;">
+    <div class="text-xl font-bold">
         🌊 Shop
     </div>
 
-    <div style="display:flex; gap:15px; flex-wrap:wrap;">
-        <a href="/" style="color:white; text-decoration:none;">Home</a>
-        <a href="/katalog" style="color:white; text-decoration:none;">Katalog</a>
-        <a href="/about" style="color:white; text-decoration:none;">About</a>
-        <a href="/contact" style="color:white; text-decoration:none;">Contact</a>
+    <div class="flex gap-4 flex-wrap">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/katalog" class="hover:underline">Katalog</a>
+        <a href="/about" class="hover:underline">About</a>
+        <a href="/contact" class="hover:underline">Contact</a>
     </div>
 
-    <div>
-        <a href="/katalog" style="
-            background:#00b894;
-            color:white;
-            padding:8px 14px;
-            border-radius:6px;
-            text-decoration:none;
-            font-weight:bold;
-        ">
-            + Tambah Produk
-        </a>
-    </div>
+    <a href="/katalog" class="bg-green-500 px-4 py-2 rounded-lg font-semibold">
+        + Tambah Produk
+    </a>
 
 </nav>
 
 <!-- CONTENT -->
-<main style="padding:20px; min-height:80vh;">
+<main class="max-w-6xl mx-auto p-4 min-h-screen">
     @yield('content')
 </main>
 
 <!-- FOOTER -->
-<footer style="
-    background: linear-gradient(90deg, #0984e3, #74b9ff);
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 30px;
-">
-    © {{ date('Y') }} MyShop. All rights reserved.
+<footer class="bg-blue-500 text-white mt-11">
+
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <div class="text-sm">
+            © {{ date('Y') }} MyShop. All rights reserved.
+        </div>
+
+        <div class="flex gap-5 text-sm">
+            <a href="/" class="hover:underline">Home</a>
+            <a href="/katalog" class="hover:underline">Katalog</a>
+            <a href="/about" class="hover:underline">About</a>
+            <a href="/contact" class="hover:underline">Contact</a>
+        </div>
+
+    </div>
+
 </footer>
 
 </body>
