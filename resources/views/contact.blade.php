@@ -4,5 +4,5 @@
 
 @section('content')
     <h1 class="text-2xl font-bold mb-4">Contact</h1>
-    <p>Hubungi kami di email: admin@email.com</p>
+    <p>Hubungi kami di email: Shop@gmail.com</p>
 @endsection
