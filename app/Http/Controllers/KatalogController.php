@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class KatalogController extends Controller
 {
     private $produk = [
-        ["nama" => "Laptop ASUS", "harga" => 8500000],
+        ["nama" => "Laptop ASUS", "harga" => 9000000],
         ["nama" => "Mouse Wireless Logitech", "harga" => 200000],
         ["nama" => "Keyboard Mechanical", "harga" => 450000],
         ["nama" => "Monitor Samsung 24 inch", "harga" => 2500000],
