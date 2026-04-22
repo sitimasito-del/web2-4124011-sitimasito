@@ -1,14 +1,15 @@
-<h1>Profil Mahasiswa</h1>
+<h2>Data Mahasiswa</h2>
 
-<p>Nama: {{ $nama }}</p>
-<p>NIM: {{ $nim }}</p>
-<p>Prodi: {{ $prodi }}</p>
-<p>Semester: {{ $semester }}</p>
+@foreach($profil as $p)
+    <p>Nama: {{ $p['nama'] }}</p>
+    <p>NIM: {{ $p['nim'] }}</p>
+    <p>Prodi: {{ $p['prodi'] }}</p>
+    <p>Semester: {{ $p['semester'] }}</p>
 
-<h3>Keahlian</h3>
-
-<ul>
-@foreach($keahlian as $skill)
-<li>{{ $skill }}</li>
+    <p>Keahlian:</p>
+    <ul>
+        @foreach($p['keahlian'] as $k)
+            <li>{{ $k }}</li>
+        @endforeach
+    </ul>
 @endforeach
-</ul>
