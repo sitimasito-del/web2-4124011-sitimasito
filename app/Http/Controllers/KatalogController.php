@@ -11,7 +11,7 @@ class KatalogController extends Controller
         ["nama" => "Mouse Wireless Logitech", "harga" => 500000],
         ["nama" => "Keyboard Mechanical", "harga" => 450000],
         ["nama" => "Monitor Samsung 24 inch", "harga" => 2500000],
-        ["nama" => "Flashdisk Sandisk 32GB", "harga" => 120000],
+        ["nama" => "Flashdisk Sandisk 32GB", "harga" => 150000],
         ["nama" => "Headset Gaming", "harga" => 350000],
         ["nama" => "Webcam HD", "harga" => 400000],
         ["nama" => "Speaker Bluetooth", "harga" => 300000],
