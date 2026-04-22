@@ -5,7 +5,7 @@
 @section('content')
 
 <h1 class="text-3xl font-bold mb-6 text-blue-900">
-    🛒 Produk
+    Produk
 </h1>
 
 <div class="grid md:grid-cols-3 gap-6">
