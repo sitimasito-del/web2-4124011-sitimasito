@@ -1,9 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Route; // Cukup satu saja
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\KatalogController;
+use App\Http\Controllers\ProdukController;
 
+// Sisanya biarkan seperti di bawah
+Route::resource('produk', ProdukController::class);
 
 Route::get('/', function () {
     return view('welcome');

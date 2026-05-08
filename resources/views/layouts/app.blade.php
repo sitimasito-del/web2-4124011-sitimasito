@@ -19,6 +19,7 @@
     <div class="flex gap-4 flex-wrap">
         <a href="{{ url('/') }}" class="hover:underline">Home</a>
         <a href="{{ url('/katalog') }}" class="hover:underline">Katalog</a>
+        <a href="{{ route('produk.index') }}" class="hover:underline">Produk</a>
         <a href="{{ url('/about') }}" class="hover:underline">About</a>
         <a href="{{ url('/contact') }}" class="hover:underline">Contact</a>
     </div>
